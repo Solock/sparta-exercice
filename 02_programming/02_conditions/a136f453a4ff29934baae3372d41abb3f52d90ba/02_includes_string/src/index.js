@@ -3,8 +3,16 @@ const myWords = "programming languages";
 
 // Create a constant called areMyWordsInTheSentence bound to the value
 // of includes used on the variable sentence with the variable myWords
-
-
+const areMyWordsInTheSentence = sentence.includes(myWords);
 // Create a condition that will log "Yes, they are talking about " and
 // the variable myWords if the words are in the sentence and
 // "Sadly, they are not talking about " and the variable myWords if not
+
+//console.log(`${areMyWordsInTheSentence ? "Yes, they are talking about " : "Sadly, they are not talking about "} "${myWords}`);
+
+if(areMyWordsInTheSentence){
+  console.log(`Yes, they are talking about ${myWords}`);
+}
+else{
+  console.log(`Sadly, they are not talking about ${myWords}`);
+}
