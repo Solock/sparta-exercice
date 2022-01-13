@@ -4,6 +4,6 @@ const planet = require("./data/exoplanetData");
 
 // Your code here:
 let canHabitateLife;
-
+ planet.
 // Don't modifiy this line for test to work properly.
 module.exports = canHabitateLife;
