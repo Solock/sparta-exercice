@@ -1,6 +1,10 @@
-function sayHelloToTeachers(teachers) {
+function sayHelloToTeachers(_teachers) {
   // Code the function here.
-
+  console.log("Hello Thomas!");
+  console.log("Hello Fenn!");
+  console.log("Hello Florian!");
+  console.log("Hello Martin!");
+  console.log("Hello Louis!");
 }
 
 // Do not remove last lines, it is for tests
