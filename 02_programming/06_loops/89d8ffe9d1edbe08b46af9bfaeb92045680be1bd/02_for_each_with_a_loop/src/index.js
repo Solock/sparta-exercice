@@ -1,4 +1,4 @@
-function forEachLoop(someNumbers, repeat ) {
+function forEachLoop(someNumbers, repeat) {
   // Code the function here.
   for (const numbers of someNumbers) {
     repeat(numbers);
