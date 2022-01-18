@@ -1,17 +1,8 @@
 function canTakeArtPieces(pieces) {
 
-  if(Object.keys(pieces).
-    filter((type) => type.includes("painting") !== true )){
-    return false;
-  }
-  else{
-    return true;
-  }
+  return pieces.every((artPiece) => artPiece.type === "painting");
+
 }
-
-const art = {piece: "Mona Lisa", type: "painting"};
-
-const resultat = canTakeArtPieces(art);
 
 
 
