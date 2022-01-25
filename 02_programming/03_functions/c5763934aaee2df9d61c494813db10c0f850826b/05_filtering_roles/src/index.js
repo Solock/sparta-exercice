@@ -25,12 +25,15 @@ function filteredRoles(personneArray, role = "Teacher"){
     console.log("toto");
   }
   else{
-    if(role !== "Teacher"){
-      newArray = personneArray.filter(element => element.role === "Student");
+    if(role !== "Teacher" && role !== "Student"){
+      return newArray;
+    }
+    else if(role !== "Student"){
+      newArray = personneArray.filter(element => element.role === "Teacher");
       return newArray;
     }
     else{
-      newArray = personneArray.filter(element => element.role === "Teacher");
+      newArray = personneArray.filter(element => element.role === "Student");
       return newArray;
     }
   }
