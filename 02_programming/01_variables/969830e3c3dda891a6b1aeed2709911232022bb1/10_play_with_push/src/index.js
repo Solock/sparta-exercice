@@ -10,5 +10,6 @@ digits.push(6);
 digits.push(7);
 digits.push(8);
 digits.push(9);
+
 // create a constant called `last` for the last cell of your array, using length
-const last = digits.length-1;
+const last = digits[digits.length - 1];
