@@ -19,6 +19,8 @@ let student = {
 
 
 let developer = {
+  ...student,
+  ...knowledge
   // code here
 };
 
@@ -27,6 +29,9 @@ let developer = {
 let application = ["bug", "code", "code", "code", "code", "code", "code", "code", "code"];
 
 
+
+
+const [bug, ...code] = ["bug", "code", "code", "code", "code", "code", "code", "code", "code"];
 // code here
 
 
