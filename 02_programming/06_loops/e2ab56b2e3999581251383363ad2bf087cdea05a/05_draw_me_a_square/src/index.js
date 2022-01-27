@@ -1,4 +1,15 @@
-function square() {
+function square(sizeSquare) {
+
+  let star = "";
+
+  for (let index = 0; index < sizeSquare; index++) {
+    star += "*";
+  }
+
+  for (let index = 0; index < sizeSquare; index++) {
+    console.log(star);
+  }
+
   // Code here
 }
 
