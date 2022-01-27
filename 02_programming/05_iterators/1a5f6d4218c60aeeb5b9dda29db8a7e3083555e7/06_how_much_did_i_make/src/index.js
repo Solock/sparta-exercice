@@ -1,5 +1,18 @@
 function howMuchDidIMake(invoices) {
+
+  const filtered = invoices.filter((object) => object.waiter === "Yourself");
+
+  const mcQueen = filtered.map(element => element.tip);
+
+  const guido = mcQueen.reduce(sum);
+
+  return guido;
+
   // Code here
+}
+
+function sum(a, b) {
+  return  a + b;
 }
 
 const invoices = [

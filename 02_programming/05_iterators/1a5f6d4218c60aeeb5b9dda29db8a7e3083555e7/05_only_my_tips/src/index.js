@@ -20,9 +20,9 @@ function onlyMyTips(invoices) {
   // Code here
 }
 
-function sum(a, b) {
-  return  a + b;
-}
+// function sum(a, b) {
+//   return  a + b;
+// }
 
 const todaysInvoices = [
   { clients: 3, waiter: "Yourself", price: 5100, tip: 200 },
