@@ -1,7 +1,7 @@
 function double(numbers) {
 
 
-  let doubleNumbers = numbers.map(numbers * 2);
+  let doubleNumbers = numbers.map(element => (element) * 2);
 
   return doubleNumbers;
 
