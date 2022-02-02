@@ -20,10 +20,6 @@ class Tree {
     this.height = this.croissance(this.age)
   }
 
-  // - 25 centimeters per year, from 1 to 9 years old (included).
-  // - 10 centimeters per year, from 10 to 20 years old (included).
-  // - It should stop growing after 20 years old.
-
   croissance(age: number): number{
 
     let height: number = 0;
