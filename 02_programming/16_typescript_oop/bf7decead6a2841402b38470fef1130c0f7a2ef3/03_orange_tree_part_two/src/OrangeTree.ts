@@ -14,7 +14,7 @@ class OrangeTree extends Tree {
 
   }
 
-  growOranges(age: number): string[] {
+  growOranges(age: number, ): string[] {
 
     if (age >= 0 && age <= 4) {
       return this.orange;
