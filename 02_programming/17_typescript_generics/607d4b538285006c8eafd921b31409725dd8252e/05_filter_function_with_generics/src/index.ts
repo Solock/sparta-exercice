@@ -1,4 +1,4 @@
-function filterFor(array, predicate) {
+function filterFor<ArrayElementVelue, ResultElementType>(array: ArrayElementVelue[], predicate: (element: ArrayElementVelue) => ResultElementType): ResultElementType[] {
   const resultArray = [];
 
   for (const element of array) {
