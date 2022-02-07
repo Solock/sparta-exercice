@@ -29,19 +29,28 @@ const coffeeRecipes: CoffeeRecipe[] = [
 ];
 
 describe("#giveRecipe function", () => {
-  test("", () => {
+  test("Check giveRecipe is a function & check had only 1 parameter", () => {
     expect.assertions(2);
+
+
     expect(typeof giveRecipe).toEqual("function");
     expect(giveRecipe.length).toEqual(1);
   });
 
-  test("     ", () => {
+  test("Check types of name key is string", () => {
     expect.assertions(2);
+
+    const coffee: string = "latte";
+    giveRecipe(coffee);
+    if (typeof coffee !== "string") {
+      return `anything else`;
+    }
+
     expect(typeof giveRecipe("latte")).toEqual("string");
     expect(typeof giveRecipe("anything else")).toEqual("string");
   });
 
-  test(" ssssSs", () => {
+  test("List ingredients", () => {
     expect.assertions(5);
     coffeeRecipes.forEach((coffee) => {
       const result = giveRecipe(coffee.name);
@@ -49,7 +58,7 @@ describe("#giveRecipe function", () => {
     });
   });
 
-  test("", () => {
+  test("Check if coffe.name have the right syntaxe", () => {
     expect.assertions(3);
     expect(giveRecipe("LATTE")).toEqual("Sorry, LATTE does not exist on our list.");
     expect(giveRecipe("latt")).toEqual("Sorry, latt does not exist on our list.");
