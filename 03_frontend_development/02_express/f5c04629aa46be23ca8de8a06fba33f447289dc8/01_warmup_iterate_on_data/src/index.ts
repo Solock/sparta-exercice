@@ -1,6 +1,6 @@
 // Code here
 
-type User = {
+type CustomerType = {
   id: number;
   first_name: string;
   last_name: string;
@@ -8,6 +8,14 @@ type User = {
   gender: string;
 }
 
-function getEmail(sentence: User): string[] {
-  return [sentence.email];
+function getEmails(sentence: CustomerType[]): string[] {
+  const emailResult: string[] = [];
+  for (let index = 0; index < sentence.length; index++) {
+    const arrayIndex = sentence[index];
+    const emailString = arrayIndex.email
+    emailResult.push(emailString);
+  }
+  return emailResult;
 }
+
+export { getEmails}

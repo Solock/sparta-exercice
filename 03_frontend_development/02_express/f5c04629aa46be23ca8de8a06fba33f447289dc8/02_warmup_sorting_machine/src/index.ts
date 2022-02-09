@@ -25,3 +25,4 @@ const nombres: number[] = [1, 2, 5, 8, 9, 12, 16];
 sortingMachine(nombres, true);
 console.log(sortingMachine(nombres, false));
 
+export { sortingMachine }
