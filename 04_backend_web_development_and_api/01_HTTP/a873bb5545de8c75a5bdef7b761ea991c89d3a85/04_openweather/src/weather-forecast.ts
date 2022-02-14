@@ -1,11 +1,27 @@
 import request from "@fewlines-education/request";
 import "dotenv/config";
 
-function weatherByZipcode(zipcode, countryCode) {
+function weatherByZipcode(zipcode: string, countryCode: string): void {
+  request(`http://api.openweathermap.org/data/2.5/forecast?zip=${zipcode},${countryCode}&appid=${process.env.OPENWEATHER_API_KEY}`, (error, body) => {
+    if(error) {
+      console.error(error);
+    } else {
+      const weatherZipCode = JSON.parse(body);
+      console.log(weatherZipCode);
+    }
+  })
   // code the function here
 }
 
-function weatherByLatitudeAndLongitude(latitude, longitude) {
+function weatherByLatitudeAndLongitude(latitude: number, longitude: number): void {
+  request(`http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${process.env.OPENWEATHER_API_KEY}`, (error, body) => {
+    if(error) {
+      console.error(error);
+    } else {
+      const weatherLatLon = JSON.parse(body);
+      console.log(weatherLatLon);
+    }
+  })
   // code the function here
 }
 
