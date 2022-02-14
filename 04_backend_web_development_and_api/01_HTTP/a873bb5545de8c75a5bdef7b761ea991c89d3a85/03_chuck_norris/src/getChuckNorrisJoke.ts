@@ -1,6 +1,14 @@
 import request from "@fewlines-education/request";
 
-function getChuckNorrisJoke() {
+function getChuckNorrisJoke(category: string): void {
+  request(`https://api.chucknorris.io/jokes/random?category=${category}`, (error, body) => {
+    if (error) {
+      console.error(error);
+    } else {
+      const nuurisJoke = JSON.parse(body)
+      console.log(nuurisJoke);
+    }
+  })
   // code the function here
 }
 
