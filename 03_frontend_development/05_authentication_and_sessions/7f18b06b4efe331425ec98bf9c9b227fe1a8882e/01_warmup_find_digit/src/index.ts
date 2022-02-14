@@ -9,5 +9,4 @@ function findDigit(anArrayOfNumbers: number[], numberSearch: number): number[] {
   });
   return newArray;
 }
-
 export { findDigit };
