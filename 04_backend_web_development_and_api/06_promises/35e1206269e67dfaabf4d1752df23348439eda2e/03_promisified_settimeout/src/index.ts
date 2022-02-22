@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 function waitFor(time: number): Promise<void> {
   return new Promise((resolve, reject) => {
     if (
@@ -13,5 +11,4 @@ function waitFor(time: number): Promise<void> {
     }
   });
 }
-
 export { waitFor };
